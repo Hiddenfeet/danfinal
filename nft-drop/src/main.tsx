@@ -16,6 +16,7 @@ const urlParams = new URL(window.location.toString()).searchParams;
 
 const activeChain = "Cronos";
 const sdk = new ThirdwebSDK(CronosBeta);
+const contract = await sdk.getContract("0xf601FfEA6A76E83921750361E613d82286c4Ad9B");
 
 
 root.render(
